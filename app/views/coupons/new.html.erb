@@ -1,0 +1,15 @@
+<h1>Coupon Form: Create New Coupon</h1>
+
+<%= form_tag new_coupon_path do %>
+
+	<label>Coupon code: </label>
+	<%= text_field_tag :coupon_code %>
+
+	<label>Coupon store: </label>
+	<%= text_field_tag :store %>
+
+	<%= submit_tag "Submit Coupon" %>
+
+	<% end %>
+
+    <%=link_to "back to index", coupons_path %>
